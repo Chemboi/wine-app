@@ -1,0 +1,99 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    text-align: center;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Merriweather', serif;
+    color: #b11226;
+}
+
+p {
+    color: #555;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #b11226;
+}
+
+a:hover {
+    color: #8a1b20;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #3b3b3b;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #b11226 !important;
+}
+
+.nav-link {
+    color: #dcdcdc !important;
+}
+
+.nav-link:hover {
+    color: #b11226 !important;
+}
+
+/* Header Section */
+header {
+    background-image: url('path/to/your/background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+}
+
+.header .display-5 {
+    color: #b11226;
+}
+
+.header p {
+    color: #ffffff;
+}
+
+/* Feature Cards Styling */
+.feature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    margin: auto;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-body h2 {
+    color: #333;
+}
+
+.card-body p {
+    color: #666;
+}
+
+/* Footer */
+footer {
+    background-color: #3b3b3b;
+    color: #ffffff;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}

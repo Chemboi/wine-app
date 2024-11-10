@@ -160,3 +160,16 @@ footer p {
     font-size: 1rem;
     color: #666;
 }
+
+
+
+/* Responsive adjustments for larger screens */
+@media (min-width: 1200px) {
+    .feature-card {
+        width: 300px; /* Increase card width */
+    }
+
+    .features {
+        gap: 3rem; /* Increase gap between cards */
+    }
+}

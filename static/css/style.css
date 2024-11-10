@@ -4,6 +4,8 @@ body {
     background-color: #f2f2f2;
     color: #333;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 h1, h2, h3, h4 {
@@ -16,43 +18,42 @@ p {
     line-height: 1.6;
 }
 
-a {
-    text-decoration: none;
-    color: #b11226;
-}
-
-a:hover {
-    color: #8a1b20;
-}
-
 /* Navbar Styling */
 .navbar {
     background-color: #3b3b3b;
+    padding: 1rem;
 }
 
-.navbar-brand {
+.navbar .navbar-brand {
     font-weight: bold;
-    color: #b11226 !important;
+    color: #b11226;
+}
+
+.navbar .navbar-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 10px;
 }
 
 .nav-link {
-    color: #dcdcdc !important;
+    color: #dcdcdc;
+    text-decoration: none;
 }
 
 .nav-link:hover {
-    color: #b11226 !important;
+    color: #b11226;
 }
 
 /* Header Section */
-header {
-    background-image: url('path/to/your/background-image.jpg');
-    background-size: cover;
-    background-position: center;
+.header {
+    background-color: #4b7a55;
+    padding: 2rem;
     color: #ffffff;
 }
 
-.header .display-5 {
-    color: #b11226;
+.header h1 {
+    color: #ffffff;
 }
 
 .header p {
@@ -60,30 +61,41 @@ header {
 }
 
 /* Feature Cards Styling */
-.feature {
+.features {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 2rem;
     justify-content: center;
-    width: 60px;
-    height: 60px;
-    font-size: 24px;
-    margin: auto;
 }
 
-.card {
+.feature-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    width: 200px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
 }
 
-.card:hover {
+.feature-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.card-body h2 {
+.feature-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.feature-card h2 {
+    font-size: 1.2rem;
     color: #333;
 }
 
-.card-body p {
+.feature-card p {
+    font-size: 0.9rem;
     color: #666;
 }
 
@@ -91,9 +103,11 @@ header {
 footer {
     background-color: #3b3b3b;
     color: #ffffff;
+    padding: 1rem;
 }
 
 footer p {
     margin: 0;
-    font-size: 14px;
+    color: #ffffff;
+    font-size: 0.875rem;
 }
